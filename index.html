@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang=pt-br>
     <head>  
-        <base href="/pwa-basic/">
-        <!-- <base href="/"> -->
+         <base href="/pwa-basic/"> 
+         <!-- <base href="/">  -->
         <meta charset="UTF-8">
         <meta>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,9 +20,26 @@
         <link rel="stylesheet" href="css/colors.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="manifest" href="manifest.json">
+
+        
+        <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDCi1prBHZxq0HXfdGPLKsUva6AsVECPYI",
+            authDomain: "pwa-notes-7ab34.firebaseapp.com",
+            databaseURL: "https://pwa-notes-7ab34.firebaseio.com",
+            projectId: "pwa-notes-7ab34",
+            storageBucket: "pwa-notes-7ab34.appspot.com",
+            messagingSenderId: "681591719296"
+        };
+        firebase.initializeApp(config);
+        </script>
+
         <script src="js/object.observe.polyfill.js"></script>
         <script src="js/array.observe.polyfill.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/push.js"></script>
     </head>
 
     <body class="grey lighten-5 blue-grey-text">
