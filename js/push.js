@@ -1,5 +1,4 @@
-if('serviceWorker' in navigator){
-navigator.serviceWorker.register('./firebase-messaging-sw.js');
+
 console.log('[Aplication] Start push listening');
 
 const messaging = firebase.messaging();
@@ -31,4 +30,4 @@ messaging.getToken()
         console.warn('get token err: ', err)
     })
 
-}
+
