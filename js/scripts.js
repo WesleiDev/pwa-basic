@@ -96,7 +96,7 @@ document.addEventListener('click', function(e){
 //Registrando service worker
 if('serviceWorker' in navigator){
     navigator.serviceWorker
-    .register('/service-worker.js')
+    .register('service-worker.js')
     .then(function(reg){
         console.log('Service Worker registred')
     })
